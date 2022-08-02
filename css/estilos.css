@@ -1,0 +1,35 @@
+h1{
+    color: blue;
+}
+p{
+    color: green;
+    background-color: yellow;
+    padding: 15x;
+    border: 10px solid powderblue;
+    margin: 50px;
+
+    /*margin-top: 40px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      
+      Todo esto se puede simplificar con un:
+      margin: 40px 10px 20px 10px;
+               t    r    b    l
+      
+               Si se quiere que las partes de arriba y abajo sean iguales, se puede escribir solo el de arriba 
+      y aplica igual para el de abajo, igual si queremos escribir solo el de la izquierda y la derecha
+      sean iguales, solo es necesario escribir tres numeros (Eso en caso de que se necesite usar el
+      margen de arriba y abajo iguales)
+
+
+      margin: 10px 30px;
+      En este ejemplo solo se estarian modificando todos los margenes seria arriba y abajo = 10
+      izquierda y derecha = 30
+
+      margin: auto; 
+      centrara los elentos, a esto se le pueden agregar pixeles de manera horizontal
+      margin: auto 50px;
+      */
+      text-align: center; /*Para centrar solo el texto*/
+}
