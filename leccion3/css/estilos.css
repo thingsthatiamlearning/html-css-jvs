@@ -1,0 +1,30 @@
+h1{
+    color: #f07167
+}
+
+/*Este cambia el color del link cuando aun no se ah abierto*/
+a:link{
+    color:#fb8500;
+    /*Para eliminar el subrayado de los links*/
+    text-decoration: none;
+}
+
+/*Aqui se cambia el color del link que ya se ah pulsado con anterioridad*/
+a:visited{
+    color:#219ebc;
+    /*Para eliminar el subrayado de los links*/
+    text-decoration: none;
+}
+
+/*Este cambia cuando nos posisionamos encima del link*/
+a:hover{
+    color:#8ecae6;
+    /*Para que se subraye el texto al posisionarnos sobre el*/
+    text-decoration: underline;
+}
+
+/*Al dejar presionado el link, este pasara a colocarse de un color mas oscuro y subrayarse*/
+a:active{
+    color: #023047;
+    text-decoration: underline;
+}
