@@ -1,0 +1,10 @@
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid black;
+    /*border collapse es para que al momento de crear una table, se muestre las lineas de la la tabla como una sola*/
+    border-collapse: collapse;
+    /*border-spacing: 5px;Aqui el espacio que se tiene en el borde se puede hacer mas grande*/
+    padding: 5px;
+}
