@@ -8,3 +8,23 @@ table, th, td{
     /*border-spacing: 5px;Aqui el espacio que se tiene en el borde se puede hacer mas grande*/
     padding: 5px;
 }
+caption{
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 45px;
+    /*Esta propiedad es para que la linea en este caso el titulo de la tabla, ocupe mas espacio*/
+    line-height: 70px;
+}
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+}
+/*con esta propiedad se seleccionan solo los renglones pares, si en lugar de even usamos odd, se utilizarian los renglones impares
+tr:nth-child(even)=par
+tr:nth-child(odd)=impar*/
+tr:nth-child(even){
+    background-color: #f1faee;
+}
+re:nth-child(odd){
+    background-color: #a8dadc;
+}
