@@ -10,15 +10,15 @@
 <body>
     
     <h1>Lenguajes de programacion</h1>
-    <div class="tarjeta">
+    <div>
         <h2>Java</h2>
         <p>Creador: James</p>
     </div>
-    <div class="tarjeta">
+    <div>
         <h2>Python</h2>
         <p>Creador: Guido</p>
     </div>
-    <div class="tarjeta">
+    <div>
         <h2>Javascript</h2>
         <p>Creador: Brendan</p>
     </div>
@@ -26,6 +26,46 @@
         <h2>Resumen</h2>
         <p>Gugull</p>
     </div>
+
+    <hr>
+
+    <h1 id="titulo_principal">Lenguajes de programacion</h1>
+    <div class="tarjeta">
+        <h2 id="Java">Java</h2>
+        <p><span class="titulo">Creador </span> Un bato</p>
+    </div>
+    <div class="tarjeta">
+        <h2 id="python">Python</h2>
+        <p><span class="titulo">Creador </span> Otro bato</p>
+    </div>
+    <div class="tarjeta">
+        <h2 id="jvs">Javascript</h2>
+        <p><span class="titulo">Creador </span>otr batoo</p>
+    </div>
+    <div>
+        <h2>Resumen Lenguajes de programacion</h2>
+        <p>Un texto aleatorio xd</p>
+    </div>
+
+    <hr>
+
+    <!--Con el id "Java" y refiriendolo aqui con un numeral, nos redirecciona a esta parte de la pagina-->
+    <a href="#Java">link a java</a>
+    <a href="#python">Python</a>
+    <a href="#jvs">Javascript</a>
+
+    
+    <hr style="padding: 10px; background-color: black;">
+
+    <!--Se pone el name="marco1" para que se identifique el frame y en el "a" se agrega el enlace y 
+    el target="marco1" para decirle que queremos que la pagina se cargue en esa parte -->
+
+    <h1>Uso de iframe en HTML</h1>
+    <iframe name="marco1" src="texto.html" class="marco"></iframe>
+    <div class="centrar">
+        <a href="https://www.youtube.com/" target="marco1" class="boton">Tutube</a>
+    </div>
+
 
 </body>
 </html>

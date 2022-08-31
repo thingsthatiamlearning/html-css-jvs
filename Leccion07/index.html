@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    
+    <h1>Formularios en HTML</h1>
+    <form method="POST"><!--se puede utilizar despues de un form un "nonvalidate para hacer que no sea necesario validar los datos"-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombrecito" required="true"/><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellidito" required="true"><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
+        <label for="Password">Password</label>
+        <input type="password" id="password" name="password" required="True">
+        <input type="submit" name="" id="" value="Enviar"/>
+        <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"><!--para enviar los botones sin necesidad de validarlo-->
+    </form>
+
+</body>
+</html>
