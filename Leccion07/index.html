@@ -9,13 +9,22 @@
 <body>
     
     <h1>Formularios en HTML</h1>
-    <form method="POST"><!--se puede utilizar despues de un form un "nonvalidate para hacer que no sea necesario validar los datos"-->
+    <form method="GET"><!--se puede utilizar despues de un form un "nonvalidate para hacer que no sea necesario validar los datos"-->
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre" placeholder="Nombrecito" required="true"/><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
+        
         <label for="apellido">Apellido:</label>
         <input type="text" name="apellido" id="apellido" placeholder="Apellidito" required="true"><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
+        
         <label for="Password">Password:</label>
         <input type="password" id="password" name="password" required="True">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" /><!--step="any" para poder agregar numeros decimales-->
+        
         <input type="submit" name="" id="" value="Enviar"/>
         <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"><!--para enviar los botones sin necesidad de validarlo-->
     </form>
