@@ -9,24 +9,65 @@
 <body>
     
     <h1>Formularios en HTML</h1>
-    <form method="GET"><!--se puede utilizar despues de un form un "nonvalidate para hacer que no sea necesario validar los datos"-->
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombrecito" required="true"/><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
+    <!--
+        action="name" es para que nos lleve a una url distinta
+        target="_name" es para que nos abra en una nueva pesta;a despues de pulsar un boton
+        autocomplete="on/off" para ctivar el autocompletado o no
+    -->
+    <form action="mi_servidor" method="GET"><!--se puede utilizar despues de un form un "nonvalidate para hacer que no sea necesario validar los datos"-->
         
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Apellidito" required="true"><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
-        
-        <label for="Password">Password:</label>
-        <input type="password" id="password" name="password" required="True">
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
+        <fieldset><!--Esto es para agregar un marco... Y ya-->
+            <legend>Datos de persona</legend><!--Para poder agregar un titulo a ese marco-->
 
-        <label for="edad">Edad:</label>
-        <input type="number" name="edad" id="edad" /><!--step="any" para poder agregar numeros decimales-->
-        
-        <input type="submit" name="" id="" value="Enviar"/>
-        <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"><!--para enviar los botones sin necesidad de validarlo-->
+            <label for="idpersona">ID Persona</label><br>
+            <input type="text" id="idpersona" name="idpersona" required="true" readonly="true" value="100" disabled="true"><br><!--readonly es para que el usuario no pueda modificar los parametros de este campo y disable es para que se desabilite y los campos aqui ya no se enviaran al sistema-->
+
+            <input type="hidden" name="sistema" id="sistema" value="SAP"><!--Para no mostrar un parametro que igual se enviara-->
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombrecito" required="true"/><br><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
+            
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellidito" required="true"><br><!--Se podria agregar value="xxx" para dar un valor inicial como texto, required es para que no se envie un campo vacio-->
+            
+            <label for="Password">Password:</label><br>
+            <input type="password" id="password" name="password" required="True"><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" /><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="edad" id="edad" /><br><!--step="any" para poder agregar numeros decimales-->
+            
+            <!--Para que solo se seleccione una de las opciones se tiene que tener el mismo nombre en name="..."-->
+            <label>Genero</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <label>Musica favorita</label><br>
+            <input type="checkbox" name="musica" id="Clasica" value="clasica"><label for="clasica">Clasica</label><br>
+            <input type="checkbox" name="musica" id="Rock" value="rock"><label for="rock">Rock</label><br>
+            <input type="checkbox" name="musica" id="Jazz" value="jazz"><label for="jazz">Jazz</label><br>
+
+            <label for="autos">Marca de auto</label><br>
+            <select name="autos" id="autos"><!--multiple='true' es para que se puedan seleccionar mas de uno-->
+                <option value="volvo">Volvo</option>
+                <option value="nissan">Nissan</option>
+                <option value="bmw">BMW</option>
+                <option value="audi" selected="true">Audi</option><!--selected="true" es para que aparezca por defecto seleccionada esta opcion-->
+            </select><br>
+
+
+
+            <label for="comentario">Comentario</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="2" placeholder="Comentario"></textarea><br>
+
+            <input type="submit" name="" id="" value="Enviar"/>
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validar"><!--para enviar los botones sin necesidad de validarlo-->
+            <input type="reset" value="restablecer" /> <!--para restablecer los valores del formlario-->
+        </fieldset>
     </form>
 
 </body>
