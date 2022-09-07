@@ -1,0 +1,13 @@
+h1{
+    color: aqua !important;/*para darle prioridad*/
+}
+#titulo{
+    color: crimson;
+    text-align: center;
+}
+div{
+    border: solid 1px black;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+}
