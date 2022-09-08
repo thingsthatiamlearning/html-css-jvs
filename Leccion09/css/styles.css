@@ -1,3 +1,7 @@
+*{
+    background-color: ghostwhite;
+    color: cornflowerblue;
+}
 h1{
     color: aqua !important;/*para darle prioridad*/
 }
@@ -10,4 +14,13 @@ div{
     border-radius: 5px;
     width: 20px;
     height: 20px;
+}
+.centrar{
+    text-align: center;
+}
+.texto_grande{
+    font-size: 20px;
+}
+p.centrar{/*para que esta etiqueta solo funcione en parrafos con la clases centrar. esto por si tenemos la clase en otra etiqueta que no sea parrafo (en este caso)*/
+    text-align: center;
 }
