@@ -1,0 +1,41 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: gray;
+}
+header{
+    background-color: black;
+}
+.icon{
+    height: 60px;
+    margin-left: 45%;
+}
+nav{
+    text-align: center;
+    background-color: black;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 15px;
+}
+nav a:hover{
+    color: black;
+    background-color: white;
+}
+.img_platanito{
+    margin: 20px 0px 0px 80px;
+}
+.platanito{
+    width: 30%;
+    float: left;
+    border: solid 6px whitesmoke;
+    border-radius: 15px;
+}
+.textito{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 20px;
+}
