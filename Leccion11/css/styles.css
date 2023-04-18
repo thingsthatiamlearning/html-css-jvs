@@ -3,14 +3,14 @@ h1{
     color: #e63946;
 }
 div{
-    padding: 10px;
-    border: 15px solid #457b9d;
     margin: auto;/*Para centrar*/
     background-color: aqua;
     max-width: 300px;/*ancho el max, se utiliza para que no aparezca una barra de scroll al momento de hacer mas peuq;a la pantalla*/
     min-width: 300px;
     outline: 10px solid #a8dadc;/*para ponerlo entre el margen y el borde*/
     outline-offset: 10px;/*Para dar un espacio entre el outline y el borde*/
+    padding: 10px;
+    border: 15px solid #457b9d;
     box-sizing: border-box;/*para que mida los pixeles que querramos en total*/
 }
 p.interno, .pp{
