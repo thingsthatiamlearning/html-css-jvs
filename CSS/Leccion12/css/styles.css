@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+.rojo{
+    border: 10px solid firebrick;
+}
+.rosa{
+    border: 10px dashed pink;
+}
+.naranja{
+    border: 10px dotted orange;
+}
+.amarillo{
+    border: 10px double yellow;
+}
+.azul{
+    border: 10px inset blue;
+}
